@@ -3,9 +3,9 @@ import numpy as np
 import joblib
 from collections import Counter
 from sklearn.preprocessing import MultiLabelBinarizer, normalize
-from sklearn.datasets import load_svmlight_file
-from gensim.models import KeyedVectors
-from tqdm import tqdm
+from sklearn.datasets import load_svmlight_file #Load datasets in the svmlight / libsvm format into sparse CSR matrix
+from gensim.models import KeyedVectors  #This module implements word vectors, and more generally sets of vectors keyed by lookup tokens/ints and various similarity look-ups.
+from tqdm import tqdm  #Instantly make your loops show a smart progress meter - just wrap any iterable with tqdm(iterable)
 from typing import Union, Iterable
 
 
